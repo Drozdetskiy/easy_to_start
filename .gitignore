@@ -1,0 +1,45 @@
+.idea/
+.DS_Store
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+eggs/
+.eggs/
+lib/
+lib64/
+sdist/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# project specific
+coverage/
+.coverage
+.tox
+
+# Other
+*.xml
+docker-compose-local.yaml
+.mypy_cache
+tmp.py
+
+# Custom
+src/cfg/config_local.yaml
+.pdm-python
+
