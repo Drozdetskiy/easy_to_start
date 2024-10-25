@@ -35,6 +35,8 @@ cli = Typer(
 # командой
 # Теперь когда ты сделаешь python manage.py run-http из консоли
 # она программа знает что нужно вызвать эту функцию
+# Вообще @ - эта штука в называется декоратор. Это сокращенная форма записи
+# для cli.command()(run_http) - но пока тебе это знать не нужно
 @cli.command()
 def run_http() -> None:
     """Serve external API via HTTP service"""
@@ -43,6 +45,13 @@ def run_http() -> None:
     set_app()
     # запускаем наш сервер
     run_external_app()
+
+
+# Тут когда ты сделаешь python manage.py run-http из консоли увидишь "hello"
+# Это просто пример
+@cli.command()
+def hello() -> None:
+    print("hello")
 
 
 # Это способ описания входной точки для твоей программы
